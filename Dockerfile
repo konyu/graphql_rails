@@ -14,4 +14,4 @@ COPY Gemfile.lock ${ROOT}
 # RubyGemsをアップデート
 # gem update --system ${RUBYGEMS_VERSION} && \
 RUN gem install bundler
-RUN bundle install --jobs 4
+RUN bundle install -j 4
